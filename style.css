@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(
+        135deg,
+        #4F46E5,
+        #6366F1
+    );
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:450px;
+    background:#fff;
+    border-radius:25px;
+    padding:35px;
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.15);
+}
+
+.logo{
+    text-align:center;
+    font-size:42px;
+    font-weight:700;
+    color:#4F46E5;
+}
+
+.slogan{
+    text-align:center;
+    color:#6B7280;
+    margin-top:10px;
+    margin-bottom:30px;
+}
+
+h2{
+    color:#111827;
+    margin-bottom:20px;
+}
+
+input,
+textarea,
+select{
+    width:100%;
+    padding:14px;
+    border:none;
+    background:#F3F4F6;
+    border-radius:12px;
+    margin-bottom:15px;
+    font-size:15px;
+    transition:.3s;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+    outline:none;
+    background:#EEF2FF;
+    border:2px solid #4F46E5;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    background:#4F46E5;
+    color:white;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    
+    background:#4338CA;
+}
+
+.btn-link{
+    display:block;
+    text-align:center;
+    text-decoration:none;
+    color:#4F46E5;
+    margin-top:20px;
+    font-weight:600;
+}
+
+.topo{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.topo button{
+    width:auto;
+    padding:10px 20px;
+}
+
+.task{
+    background:#EEF2FF;
+    border:none;
+    border-left:6px solid #4F46E5;
+    border-radius:15px;
+    padding:18px;
+    margin-bottom:15px;
+    transition:.3s;
+}
+
+.task:hover{
+    transform:translateY(-3px);
+}
+
+.task h3{
+    color:#4F46E5;
+    margin-bottom:8px;
+}
+
+.task p{
+    color:#374151;
+    margin-bottom:5px;
+}
+
+.task button{
+    margin-top:10px;
+    background:#EF4444;
+}
+
+.task button:hover{
+    background:#DC2626;
+}
+
+.dashboard{
+    max-width:650px;
+}
+
+.nova-tarefa{
+    margin-bottom:20px;
+    text-decoration:none;
+    display:block;
+    text-align:center;
+    background:#4F46E5;
+    color:white;
+    padding:14px;
+    border-radius:12px;
+    font-weight:600;
+}
+
+.nova-tarefa:hover{
+    background:#4338CA;
+}

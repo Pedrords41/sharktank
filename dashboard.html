@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taskly - Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body onload="listarTarefas()">
+
+<div class="container dashboard">
+
+    <div class="topo">
+
+        <h2>Minhas Tarefas</h2>
+
+        <button onclick="logout()">
+            Sair
+        </button>
+
+    </div>
+
+    <a href="tarefa.html" class="btn-link">
+        + Nova Tarefa
+    </a>
+
+    <div id="listaTarefas"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

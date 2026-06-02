@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nova Tarefa</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Nova Tarefa</h2>
+
+    <input
+        type="text"
+        id="titulo"
+        placeholder="Título da tarefa"
+    >
+
+    <textarea
+        id="descricao"
+        placeholder="Descrição"
+    ></textarea>
+
+    <input
+        type="date"
+        id="data"
+    >
+
+    <select id="prioridade">
+        <option value="Alta">Alta</option>
+        <option value="Média">Média</option>
+        <option value="Baixa">Baixa</option>
+    </select>
+
+    <button onclick="salvarTarefa()">
+        Salvar Tarefa
+    </button>
+
+    <a href="dashboard.html" class="btn-link">
+        Voltar
+    </a>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
