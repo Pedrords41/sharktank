@@ -1,34 +1,141 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Taskly - Dashboard</title>
-<link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Taskly - Dashboard
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
 </head>
-<body onload="listarTarefas()">
 
-<div class="container dashboard">
+<body onload="carregarDashboard()">
 
-    <div class="topo">
+    <header class="topo">
 
-        <h2>Minhas Tarefas</h2>
+        <h2>
+            📚 Taskly
+        </h2>
 
-        <button onclick="logout()">
-            Sair
-        </button>
+        <div>
+
+            <span
+                class="usuario"
+                id="usuario"
+            >
+            </span>
+
+            <button
+                onclick="logout()"
+                class="btn"
+                style="
+                width:auto;
+                padding:10px 20px;
+                margin-left:10px;
+                "
+            >
+                Sair
+            </button>
+
+        </div>
+
+    </header>
+
+    <div class="container">
+
+        <div class="stats">
+
+            <div class="stat">
+
+                <h2 id="totalTarefas">
+                    0
+                </h2>
+
+                <p>
+                    Total de Tarefas
+                </p>
+
+            </div>
+
+            <div class="stat">
+
+                <h2 id="alta">
+                    0
+                </h2>
+
+                <p>
+                    Prioridade Alta
+                </p>
+
+            </div>
+
+            <div class="stat">
+
+                <h2 id="media">
+                    0
+                </h2>
+
+                <p>
+                    Prioridade Média
+                </p>
+
+            </div>
+
+            <div class="stat">
+
+                <h2 id="baixa">
+                    0
+                </h2>
+
+                <p>
+                    Prioridade Baixa
+                </p>
+
+            </div>
+
+        </div>
+
+        <a
+            href="tarefa.html"
+            class="nova-tarefa"
+        >
+            ➕ Nova Tarefa
+        </a>
+
+        <div
+            id="listaTarefas"
+            class="lista-tarefas"
+        >
+
+        </div>
 
     </div>
 
-    <a href="tarefa.html" class="btn-link">
-        + Nova Tarefa
-    </a>
+    <footer>
 
-    <div id="listaTarefas"></div>
+        Taskly © 2026
 
-</div>
+        <br>
 
-<script src="script.js"></script>
+        Organize sua vida escolar
+        em um só lugar
+
+    </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
+
 </html>

@@ -1,32 +1,42 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Taskly - Login</title>
-<link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Taskly - Login</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
 
-<div class="container">
+    <div class="login-container">
 
-    <h1 class="logo">TASKLY</h1>
+        <div class="login-card">
 
-    <p class="slogan">
-        Organize sua vida escolar em um só lugar
-    </p>
+            <h1 class="logo">📚 Taskly</h1>
 
-    <input type="email" id="email" placeholder="Digite seu e-mail">
+            <p class="subtitulo">
+                Sua organização começa agora
+            </p>
 
-    <input type="password" id="senha" placeholder="Digite sua senha">
+            <input
+                type="email"
+                id="email"
+                placeholder="Digite seu e-mail"
+            >
 
-    <button onclick="login()">
-        Entrar
-    </button>
+            <button class="btn" onclick="login()">
+                 Entrar
+            </button>
+        </div>
 
-</div>
+    </div>
 
-<script src="script.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 </html>

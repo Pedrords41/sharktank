@@ -1,50 +1,128 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nova Tarefa</title>
-<link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Nova Tarefa - Taskly
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
 </head>
+
 <body>
 
-<div class="container">
+    <div class="form-container">
 
-    <h2>Nova Tarefa</h2>
+        <h2>
+            ➕ Nova Tarefa
+        </h2>
 
-    <input
-        type="text"
-        id="titulo"
-        placeholder="Título da tarefa"
-    >
+        <input
+            type="text"
+            id="titulo"
+            placeholder="Título da tarefa"
+        >
 
-    <textarea
-        id="descricao"
-        placeholder="Descrição"
-    ></textarea>
+        <textarea
+            id="descricao"
+            placeholder="Descrição da tarefa"
+        ></textarea>
 
-    <input
-        type="date"
-        id="data"
-    >
+        <select id="materia">
 
-    <select id="prioridade">
-        <option value="Alta">Alta</option>
-        <option value="Média">Média</option>
-        <option value="Baixa">Baixa</option>
-    </select>
+            <option value="">
+                Selecione a matéria
+            </option>
 
-    <button onclick="salvarTarefa()">
-        Salvar Tarefa
-    </button>
+            <option>
+                Matemática
+            </option>
 
-    <a href="dashboard.html" class="btn-link">
-        Voltar
-    </a>
+            <option>
+                Português
+            </option>
 
-</div>
+            <option>
+                História
+            </option>
 
-<script src="script.js"></script>
+            <option>
+                Geografia
+            </option>
+
+            <option>
+                Física
+            </option>
+
+            <option>
+                Química
+            </option>
+
+            <option>
+                Programação
+            </option>
+
+            <option>
+                Banco de Dados
+            </option>
+
+            <option>
+                Redes
+            </option>
+
+        </select>
+
+        <input
+            type="date"
+            id="data"
+        >
+
+        <select id="prioridade">
+
+            <option>    
+                Alta
+            </option>
+
+            <option>
+                Média
+            </option>
+
+            <option>
+                Baixa
+            </option>
+
+        </select>
+
+        <button
+            class="btn"
+            onclick="salvarTarefa()"
+        >
+            Salvar Tarefa
+        </button>
+
+        <a
+            href="dashboard.html"
+            class="voltar"
+        >
+            ← Voltar para Dashboard
+        </a>
+
+    </div>
+
+    <script src="js/script.js"></script>
 
 </body>
+
 </html>
